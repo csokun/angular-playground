@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app1">
+  <head>
+    <meta charset="utf-8">
+    <title>Manage User</title>
+    <link rel="stylesheet" href="manage-users/css/main.css">
+  </head>
+  <body>
+    <div ui-view></div>
+
+    <!-- We'll also add some navigation: -->
+    <a ui-sref="state1">State 1</a>
+    <a ui-sref="state2">State 2</a>
+
+    <script src="/app/lib/angular.js"></script>
+	<script src="/app/lib/angular-ui-router.js"></script>
+	<script type="text/javascript">
+		'use strict';
+		var app = angular.module('app1', ['ui.router']);
+	</script>
+	<script src="manage-users/module.js"></script>
+	<script src="manage-users/js/controllers.js"></script>
+	<script src="manage-users/js/services.js"></script>
+  </body>
+</html>
