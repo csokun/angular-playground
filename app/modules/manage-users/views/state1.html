@@ -2,3 +2,10 @@
 <hr/>
 <a ui-sref="state1.list">Show List</a>
 <div ui-view></div>
+<div ng-controller="ManageUserHomeCtrl as homeCtrl">
+<ul>
+	<li ng-repeat="u in homeCtrl.users">
+		{{u.username}} {{u.name}}
+	</li>
+</ul>
+</div>
